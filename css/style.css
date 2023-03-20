@@ -68,7 +68,7 @@ body {
     width: 375px;
     box-sizing: border-box;
     background-color: #495795;
-    background-image: url(../img/4@2x.png);
+    background-image: url(/img/4@2x.png);
     background-repeat: no-repeat;
     background-size: cover; 
     padding: 40px 20px;
@@ -153,7 +153,6 @@ main {
 
 .cart__link {
     text-align: center;
-    background-image: url(/img/shape-transparency.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -163,11 +162,39 @@ main {
     transition-timing-function: ease;
 }
 
-.cart__link:active {
-    transform: scale(1.2);
-    background-image: url(/img/shape-1.svg);
+.sale {
+    position: absolute;
+    font-size: 10px;
+    top: 1px;
+    right: 9px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #DB0000;
+}
 
-}   
+
+.cart__link:nth-child(1) {
+    background-image: url(/img/shape-1_2x.svg);
+}
+
+.second__cart {
+    background-image: url(/img/shape-3.svg);
+    position: relative;
+}
+  
+
+.first__cart:active {
+   background-image: url(/img/shape-1.svg); 
+   transform: scale(1.2);
+}
+
+.second__cart:active {
+    background-image: url(/img/shape-2-2x.svg);
+    transform: scale(1);
+}
 
 .cart__link:active  .cart__title {
     font-size: 18.7px;
@@ -201,7 +228,7 @@ main {
 
 
 .price {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 15px;
     font-weight: 400;
@@ -214,6 +241,10 @@ main {
 .price__month {
     font-size: 12px;
     line-height: 14px;
+}
+
+.price_part {
+    font-size: 12px;
 }
 
 .cart__descr {
@@ -342,10 +373,11 @@ footer {
 
     .cart__link {
         padding: 25px 18px 20px 18px;
+        background-size: auto;
     }
 
     .price {
-        font-size: 26px;
+        font-size: 18px;
         line-height: 1;
     }
 
@@ -357,6 +389,15 @@ footer {
         font-size: 12px;
         margin-top: 15px;
         transform: scale(1.35);
+    }
+
+    .sale {
+        font-size: 12px;
+        top: 4px;
+        right: 1px;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
     }
 
     .price__month {
