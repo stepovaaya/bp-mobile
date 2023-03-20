@@ -67,6 +67,7 @@ body {
     font-family: 'SFPro', sans-serif;
     width: 375px;
     box-sizing: border-box;
+    background-color: #495795;
     background-image: url(/img/4@2x.png);
     background-repeat: no-repeat;
     background-size: cover; 
