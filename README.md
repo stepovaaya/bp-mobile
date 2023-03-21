@@ -1,2 +1,1 @@
-# bp-mobile
-test
+https://stepovaaya.github.io/test-bp
