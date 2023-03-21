@@ -1,2 +1,2 @@
-https://stepovaaya.github.io/bp-mobile
+https://stepovaaya.github.io/test/bp-mobile
 test
