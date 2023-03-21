@@ -34,8 +34,8 @@ a {
 @font-face {
     font-family: 'SFPro';
     src: local('SFPro-regular'),
-      url('/fonts/SFProText-Regular.woff2') format('woff2'),
-      url('/fonts/SFProText-Regular.woff') format('woff');
+      url('../fonts/SFProText-Regular.woff2') format('woff2'),
+      url('../fonts/SFProText-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -44,8 +44,8 @@ a {
 @font-face {
     font-family: 'SFPro';
     src: local('SFPro-bold'),
-      url('/fonts/SFProText-Bold.woff2') format('woff2'),
-      url('/fonts/SFProText-Bold.woff') format('woff');
+      url('../fonts/SFProText-Bold.woff2') format('woff2'),
+      url('../fonts/SFProText-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -54,8 +54,8 @@ a {
 @font-face {
     font-family: 'SFPro';
     src: local('SFPro-heavy'),
-      url('/fonts/SFProText-Heavy.woff2') format('woff2'),
-      url('/fonts/SFProText-Heavy.woff') format('woff');
+      url('../fonts/SFProText-Heavy.woff2') format('woff2'),
+      url('../fonts/SFProText-Heavy.woff') format('woff');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -68,7 +68,7 @@ body {
     width: 375px;
     box-sizing: border-box;
     background-color: #495795;
-    background-image: url(/img/4@2x.png);
+    background-image: url(../img/4@2x.png);
     background-repeat: no-repeat;
     background-size: cover; 
     padding: 40px 20px;
@@ -132,15 +132,15 @@ main {
 }
 
 .text__link:nth-child(1) {
-    background-image: url(/img/unlimitedDocs.svg);
+    background-image: url(../img/unlimitedDocs.svg);
 }
 
 .text__link:nth-child(2) {
-    background-image: url(/img/export.svg);
+    background-image: url(../img/export.svg);
 }
 
 .text__link:nth-child(3) {
-    background-image: url(/img/noAds.svg);
+    background-image: url(../img/noAds.svg);
 }
 
 .cart__list {
@@ -162,6 +162,10 @@ main {
     transition-timing-function: ease;
 }
 
+input {
+    display: none;
+}
+
 .sale {
     position: absolute;
     font-size: 10px;
@@ -177,30 +181,36 @@ main {
 
 
 .cart__link:nth-child(1) {
-    background-image: url(/img/shape-1_2x.svg);
+    background-image: url(../img/shape-1_2x.svg);
 }
 
 .second__cart {
-    background-image: url(/img/shape-3.svg);
+    background-image: url(../img/shape-3.svg);
     position: relative;
 }
   
 
-.first__cart:active {
-   background-image: url(/img/shape-1.svg); 
+.first__cart.active {
+   background-image: url(../img/shape-1.svg); 
    transform: scale(1.2);
 }
 
+.active {
+    transform: scale(1.2);
+}
+
 .second__cart:active {
-    background-image: url(/img/shape-2-2x.svg);
+    background-image: url(../img/shape-2-2x.svg);
     transform: scale(1);
 }
 
-.cart__link:active  .cart__title {
+.first__link:active  .cart__title,
+.second__cart:active .cart__title {
     font-size: 18.7px;
 }
 
-.cart__link:active  .price {
+.first__link:active  .price,
+.second__link:active .price {
     font-size: 24px;
 }
 
@@ -349,7 +359,7 @@ footer {
 @media (width:390px) {
     body {
         padding: 25px 20px;
-        background-image: url(/img/4@3x.png);
+        background-image: url(../img/4@3x.png);
     }
 
     main {
